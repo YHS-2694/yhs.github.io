@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="BlogPage" content="Blog page">
+    <meta name="author" content="Young Ha Shin">
+
+    <link rel="stylesheet" href="./common_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item text-element">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-element">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item text-element">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item text-element">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Image Gallery</h1>
+
+        <!-- 
+            Bootstrap Grid Classes Explained:
+            1. row: Defines the container for columns.
+            2. row-cols-2: Default for small screens (2 columns).
+            3. row-cols-sm-3: Switches to 3 columns on small screens.
+            4. row-cols-lg-5: Switches to the desired 5 columns on large screens.
+            5. g-3: Adds a gutter (gap) of size 3 between grid items.
+        -->
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-3">
+
+            <!-- Gallery Item 1 -->
+            <div class="col">
+                <img src="Images\koreaFlag.png" class="gallery-img image-element" alt="Gallery Image 1" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="col">
+                <img src="Images\usFlag.png" class="gallery-img image-element" alt="Gallery Image 2" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="col">
+                <img src="Images\NCFlag.png" class="gallery-img image-element" alt="Gallery Image 3" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="col">
+                <img src="Images\NYFlag.png" class="gallery-img image-element" alt="Gallery Image 4" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="col">
+                <img src="Images\UAlbanyMark_F_S03B_HEX_Reversal_Gold_White.png" class="gallery-img image-element"
+                    alt="Gallery Image 5" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="col">
+                <img src="Images\NCBeach.jpg" class="gallery-img image-element" alt="Gallery Image 6" onerror="this.onerror=null;">
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="col">
+                <img src="Images\MountainNC.jpg" class="gallery-img image-element" alt="Gallery Image 7" onerror="this.onerror=null;">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div class="container text-center puff-in-center">
+        <p class="mb-2">All rights reserved.</p>
+    </div>
+</footer>

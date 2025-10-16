@@ -18,61 +18,67 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item text-element">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                    <li class="nav-item text-element">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item text-element">
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item text-element">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
+    <h1 class="header_center slide-in-fwd-center" id="title">Young Ha Shin Web Page</h1>
 
-    <h1 class="header_center">Young Ha Shin Web Page</h1>
+    <ul class="list-group slide-in-left">
+        <!-- 1. The Parent List Item -->
+        <li class="list-group-item active" aria-current="true">
+            Notice
 
-    <p class="text_spacing">This is the home page</p>
-    <p class="text_spacing">about me and blog pages can be accessed</p>
+            <!-- Inner List 1 -->
+            <ul class="list-group list-group-flush mt-2">
+
+                <!-- CHANGED: Added 'active' class here to make the date stand out -->
+                <li class="list-group-item active" aria-current="true">10/15/2025</li>
+                <li class="list-group-item">Created Index page</li>
+                <li class="list-group-item">Created About me page</li>
+
+            </ul>
+
+            <!-- Inner List 2 -->
+            <ul class="list-group list-group-flush mt-2">
+
+                <!-- CHANGED: Added 'active' class here to make the date stand out -->
+                <li class="list-group-item active" aria-current="true">10/14/2025</li>
+                <li class="list-group-item">Created Blog page</li>
+                <li class="list-group-item">Created Gallery page</li>
+
+            </ul>
+
+        </li>
+
+        <!-- Other top-level list items would go here -->
+        <!-- <li class="list-group-item">Another Top Item</li> -->
+    </ul>
 
 </body>
+
 <footer>
-
-    <div class="container text-center">
-
-        <img src="./Images/UAlbanyMark_F_S03B_HEX_Reversal_Gold_White.png" alt="School Logo" class="footer-logo mb-3">
-
+    <div class="container text-center puff-in-center">
         <p class="mb-2">All rights reserved.</p>
-
     </div>
-
 </footer>
